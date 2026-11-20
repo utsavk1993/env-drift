@@ -1,0 +1,20 @@
+{
+  "name": "env-drift",
+  "version": "0.1.0",
+  "description": "Find environment variables your code reads but .env.example doesn't document, and the reverse.",
+  "type": "module",
+  "bin": { "env-drift": "dist/cli.js" },
+  "files": ["dist"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": ["dotenv", "env", "environment-variables", "cli", "lint"],
+  "author": "Utsav Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  }
+}
